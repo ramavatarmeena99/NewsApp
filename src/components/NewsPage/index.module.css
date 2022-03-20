@@ -1,0 +1,120 @@
+.container {
+  width: 100%;
+  height: 10vh;
+  background-color: #212121;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  /* align-items: center;
+  justify-content: center; */
+}
+.container input {
+  width: 50%;
+  height: 70%;
+  font-size: 18px;
+  border: none;
+
+  outline: none;
+  padding-left: 10px;
+  /* background-color: lightgray; */
+}
+
+.newsLogo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsLogo p {
+  font-size: 30px;
+  font-weight: 500;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.searchNews {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  width: 20%;
+  height: 75%;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+  /* margin-top: 20px; */
+}
+.languages {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.language {
+  padding-left: 20px;
+  cursor: pointer;
+  color: white;
+}
+.language:hover {
+  color: greenyellow;
+}
+.newsColumn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.items {
+  width: 90%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 10px;
+  /* margin: 0px 10px; */
+}
+.items .imgTag {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.discription {
+  flex: 1;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-left: 20px;
+}
+.discription h1 {
+  font-size: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  padding: 0px 20px;
+}
+.discription p {
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 1.9;
+  padding: 0px 20px;
+}
