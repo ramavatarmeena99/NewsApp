@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Style from "./index.module.css";
 import axios from "axios";
 import {
@@ -129,9 +129,9 @@ export default function NewsPage() {
     },
   ];
 
-  useEffect(() => {
-    fetchNews();
-  }, []);
+  // useEffect(() => {
+  //   fetchNews();
+  // }, []);
 
   return (
     <>
