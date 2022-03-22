@@ -8,12 +8,11 @@
   /* align-items: center;
   justify-content: center; */
 }
-.container input {
-  width: 50%;
-  height: 70%;
+.searchNewsCenter input {
+  width: 80%;
+  height: 98%;
   font-size: 18px;
   border: none;
-
   outline: none;
   padding-left: 10px;
   /* background-color: lightgray; */
@@ -38,11 +37,22 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
-button {
+.searchNewsCenter {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  border-radius: 1px;
+  border: 1px solid black;
+}
+.searchNewsCenter button {
   width: 20%;
-  height: 75%;
+  height: 90%;
   cursor: pointer;
   font-size: 18px;
   border: none;
@@ -51,15 +61,16 @@ button {
   /* margin-top: 20px; */
 }
 .languages {
-  width: 20%;
+  width: 30%;
   height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 30px;
 }
 .language {
-  padding-left: 20px;
+  padding-right: 30px;
   cursor: pointer;
   color: white;
 }

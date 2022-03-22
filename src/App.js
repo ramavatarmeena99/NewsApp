@@ -1,9 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
-import NewsPage from "./components/NewsPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 function App() {
-  return <NewsPage />;
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;

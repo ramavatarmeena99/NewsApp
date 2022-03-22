@@ -33,7 +33,7 @@ export default function NewsPage() {
     if (searchQueryAction === true) {
       axios({
         method: "GET",
-        url: `https://newsapi.org/v2/everything?q=${search}&language=${selectedLang}&apiKey=${API_KEY}`,
+        url: `https://newsapi.org/v2/everything?q=${search}&language=${selectedLang}&sortBy=popularity&apiKey=${API_KEY}`,
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json; charset=UTF-8",
@@ -150,12 +150,11 @@ export default function NewsPage() {
       ) : (
         <div>
           <div className={Style.container}>
-            <div className={Style.newsLogo}>
-              <p>Daily News</p>
-            </div>
             <div className={Style.searchNews}>
-              <input onChange={saveNews} onKeyDown={onKeyPress} />
-              <button onClick={() => fetchNews(true)}>Search News</button>
+              <div className={Style.searchNewsCenter}>
+                <input onChange={saveNews} onKeyDown={onKeyPress} />
+                <button onClick={() => fetchNews(true)}>Search News</button>
+              </div>
             </div>
             <div className={Style.languages}>
               {myLang.map((item, index) => {
