@@ -8,7 +8,7 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a>
+            <a href="/">
               <div className={Style.logo}>
                 <h1>Daily News</h1>
               </div>
